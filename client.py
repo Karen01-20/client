@@ -28,8 +28,7 @@ stream = p.open(format=FORMAT,
                 channels=CHANNELS,
                 rate=RATE,
                 output=True,
-                frames_per_buffer=CHUNK,
-                output_device_index=0)
+                frames_per_buffer=CHUNK)
 
 # Cola para almacenar los datos de audio
 audio_queue = Queue()
